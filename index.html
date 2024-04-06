@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3587aca0ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="syle.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <nav class="container">
+      <div class="navbar flex_item">
+        <div class="logo_and_navlink flex_item">
+          <button class="mobile_menu_btn">
+            <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
+                fill="#69707D"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div class="logo"><img src="images/logo.svg" alt="logo" /></div>
+          <ul class="nav-link">
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="cart_and_avatar flex_item">
+          <button class="cart_btn">
+            <img src="images/icon-cart.svg" alt="cart icon" />
+          </button>
+          <img src="images/image-avatar.png" alt="cart icon" class="avatar" />
+          <div class="cart hide">
+            <h3>cart</h3>
+            <div class="cart_info">
+              <p class="empty">Your cart is empty.</p>
+              <div class="checkout hide">
+                <div class="info_container flex_item">
+                  <img
+                    src="images/image-product-1-thumbnail.jpg"
+                    alt="shoe thumbnail"
+                  />
+                  <div class="checkout_info">
+                    <p>Fall Limited Edition Sneakers</p>
+                    <p>
+                      $125.00 x <span class="quantity">0</span>
+                      <span class="total">$0</span>
+                    </p>
+                  </div>
+                  <button class="delete">
+                    <img src="images/icon-delete.svg" alt="delete icon" />
+                  </button>
+                </div>
+                <button class="checkout_btn">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile_link">
+          <button class="close_mobile_menu">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#68707d"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </button>
+
+          </button>
+          <ul>
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="main_heading">
+        <div class="product_image">
+          <div class="preview">
+            <img src="images/image-product-1.jpg" alt="image of the product" />
+          </div>
+          <div class="thumbnail_container flex_item">
+            <button class="active thumbnail">
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt="thumbnail 1"
+                class="thumbnail_img"
+              />
+            </button>
+            <button class="thumbnail">
+              <img
+                src="images/image-product-2-thumbnail.jpg"
+                alt="thumbnail 2"
+                class="thumbnail_img"
+              />
+            </button>
+            <button class="thumbnail">
+              <img
+                src="images/image-product-3-thumbnail.jpg"
+                alt="thumbnail 3"
+                class="thumbnail_img"
+              />
+            </button>
+            <button class="thumbnail">
+              <img
+                src="images/image-product-4-thumbnail.jpg"
+                alt="thumbnail 4"
+                class="thumbnail_img"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="product_details">
+          <div>
+            <h2 class="sub-heading">Sneaker Company</h2>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p class="about_heading">
+              These low-profile sneakers are your perfect casual wear companion
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="price">
+              <p class="discount_price">$125.00</p>
+              <span class="discount">50%</span>
+            </div>
+            <span class="main_price">$250.00</span>
+
+            <div class="cart_heading flex_item">
+              <div class="select_heading">
+                <button class="decrease_item">
+                  <img src="images/icon-minus.svg" alt="" />
+                </button>
+                <span class="count">0</span>
+                <button class="increase_item">
+                  <img src="images/icon-plus.svg" alt="" />
+                </button>
+              </div>
+              <button class="add_to_cart">
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="#fff"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal_container">
+      <div class="modal">
+        <button class="close_modal_btn">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#fff"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </button>
+        <div class="preview_container">
+          <button class="previous_btn">
+            <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 1 3 9l8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div class="carousel">
+            <img src="images/image-product-1.jpg" alt="image of the product" />
+            <img src="images/image-product-2.jpg" alt="image of the product" />
+            <img src="images/image-product-3.jpg" alt="image of the product" />
+            <img src="images/image-product-4.jpg" alt="image of the product" />
+          </div>
+          <button class="next_btn">
+            <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m2 1 8 8-8 8"
+                stroke="#1D2026"
+                stroke-width="3"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="flex_item modal_thumbnail">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt="thumbnail image"
+            class="thumbnail_img active"
+          />
+
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="thumbnail image"
+            class="thumbnail_img"
+          />
+
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="thumbnail image"
+            class="thumbnail_img"
+          />
+
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            alt="thumbnail image"
+            class="thumbnail_img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
