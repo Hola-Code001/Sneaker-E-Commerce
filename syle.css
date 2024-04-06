@@ -6,7 +6,7 @@
   --Pale-orange: hsl(25, 100%, 94%);
 
   --Very-dark-blue: rgb(29, 32, 37);
-  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Dark-grayish-blue: rgb(104, 112, 125);
   --Grayish-blue: hsl(220, 14%, 75%);
   --Light-grayishblue: hsl(223, 64%, 98%);
   --White: hsl(0, 0%, 100%);
@@ -628,9 +628,6 @@ h1 {
   .preview img {
     width: 100%;
     border-radius: 0;
-  }
-
-  .thumbnail_container {
   }
 
   .cart_heading {
